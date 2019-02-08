@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3501D9E220DC80B00BEF303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3501D9D220DC80900BEF303 /* Assets.xcassets */; };
 		F3ED8747220A1E0E00983A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED8746220A1E0E00983A12 /* AppDelegate.swift */; };
 		F3ED8749220A1E0E00983A12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED8748220A1E0E00983A12 /* ViewController.swift */; };
 		F3ED874C220A1E0E00983A12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ED874A220A1E0E00983A12 /* Main.storyboard */; };
-		F3ED874E220A1E1700983A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3ED874D220A1E1700983A12 /* Assets.xcassets */; };
 		F3ED8751220A1E1700983A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ED874F220A1E1700983A12 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3501D9D220DC80900BEF303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "01-iamrich/Assets.xcassets"; sourceTree = "<group>"; };
 		F3ED8743220A1E0E00983A12 /* 01-iamrich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-iamrich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3ED8746220A1E0E00983A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3ED8748220A1E0E00983A12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3ED874B220A1E0E00983A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F3ED874D220A1E1700983A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3ED8750220A1E1700983A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3ED8752220A1E1700983A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +40,7 @@
 			children = (
 				F3ED8745220A1E0E00983A12 /* 01-iamrich */,
 				F3ED8744220A1E0E00983A12 /* Products */,
+				F3501D9D220DC80900BEF303 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +55,29 @@
 		F3ED8745220A1E0E00983A12 /* 01-iamrich */ = {
 			isa = PBXGroup;
 			children = (
+				F3ED8759220A1E4E00983A12 /* Storyboard */,
+				F3ED8758220A1E3100983A12 /* Controller */,
 				F3ED8746220A1E0E00983A12 /* AppDelegate.swift */,
-				F3ED8748220A1E0E00983A12 /* ViewController.swift */,
-				F3ED874A220A1E0E00983A12 /* Main.storyboard */,
-				F3ED874D220A1E1700983A12 /* Assets.xcassets */,
-				F3ED874F220A1E1700983A12 /* LaunchScreen.storyboard */,
 				F3ED8752220A1E1700983A12 /* Info.plist */,
 			);
 			path = "01-iamrich";
+			sourceTree = "<group>";
+		};
+		F3ED8758220A1E3100983A12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3ED8748220A1E0E00983A12 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3ED8759220A1E4E00983A12 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3ED874F220A1E1700983A12 /* LaunchScreen.storyboard */,
+				F3ED874A220A1E0E00983A12 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3ED8751220A1E1700983A12 /* LaunchScreen.storyboard in Resources */,
-				F3ED874E220A1E1700983A12 /* Assets.xcassets in Resources */,
+				F3501D9E220DC80B00BEF303 /* Assets.xcassets in Resources */,
 				F3ED874C220A1E0E00983A12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

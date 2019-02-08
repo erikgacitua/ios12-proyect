@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_iamrich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamon-image" translatesAutoresizingMaskIntoConstraints="NO" id="BOl-Ot-ZIs">
+                                <rect key="frame" x="99" y="248.5" width="216" height="241"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbX-UG-Yrr">
+                                <rect key="frame" x="20" y="660" width="374" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Pulsame y seras Rich">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.43033516839378239" green="0.1219422695702199" blue="0.13912017870595725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aA2-ow-AeD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I'm Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B19-3g-lsw">
+                                <rect key="frame" x="139" y="141" width="138" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29695644742051208" green="0.04561573143642883" blue="0.3836018458549223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B19-3g-lsw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1YS-DC-6Nw"/>
+                            <constraint firstItem="BbX-UG-Yrr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6NF-d5-0Lt"/>
+                            <constraint firstItem="BbX-UG-Yrr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G9J-dw-42N"/>
+                            <constraint firstItem="BbX-UG-Yrr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uc1-iB-ZbE"/>
+                            <constraint firstItem="BbX-UG-Yrr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9b-pA-Y2u"/>
+                            <constraint firstItem="BOl-Ot-ZIs" firstAttribute="top" secondItem="B19-3g-lsw" secondAttribute="bottom" constant="55.5" id="fBx-ip-xmy"/>
+                            <constraint firstItem="B19-3g-lsw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="gKO-4k-Zbo"/>
+                            <constraint firstItem="BOl-Ot-ZIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m1O-v9-xQh"/>
+                            <constraint firstItem="BbX-UG-Yrr" firstAttribute="top" secondItem="BOl-Ot-ZIs" secondAttribute="bottom" constant="170" id="scU-yo-pvv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ButtonRich" destination="BbX-UG-Yrr" id="gJ1-05-Gk6"/>
+                        <outlet property="ImageDiamond" destination="BOl-Ot-ZIs" id="Rv7-g6-XeD"/>
+                        <outlet property="LabelTitle" destination="B19-3g-lsw" id="zei-hU-a1L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62.318840579710148" y="26.785714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="diamon-image" width="216.5" height="241"/>
+    </resources>
+</document>
