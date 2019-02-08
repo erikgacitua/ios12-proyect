@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         //Ejemplo para asociar una acción al botón acepta
         let action = UIAlertAction(title: "Aceptar", style: .default) { (action) in
-            print("He presionado el botón Aceptar")
+            print("He presionado el botón de Aceptar")
         }
         
         //código para agregar el botón al mensaje que esta en la variable controller
@@ -52,13 +52,13 @@ class ViewController: UIViewController {
         
         //let action2 = UIAlertAction(title: "Borrar", style: .destructive, handler: nil)//nil hace referencia a nullo
         let action2 = UIAlertAction(title: "Borrar", style: .destructive) { (action2) in
-            print("He pulsado el botón Borrar")
+            print("He pulsado el botón de Borrar")
         }
         controller.addAction(action2)
         
         //let action3 = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
         let action3 = UIAlertAction(title: "Cancelar", style: .cancel) { (action3) in
-            print("He pulsado el botón cancelar")
+            print("He pulsado el botón de cancelar")
         }
         controller.addAction(action3)
         //muestra mensaje
